@@ -17,7 +17,7 @@ const CHera = () => {
                     <br></br>
                     <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
                     <br></br>
-                    <Link to="/detalii/casa1" className='item'>
+                    <Link to="/detalii/casa5" className='item'>
                         <img className='img-menu' src={casa5_1} />
 
                         <div className='item-text'>
@@ -28,7 +28,7 @@ const CHera = () => {
                     <br></br>
                     <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
                     <br></br>
-                    <Link to="/detalii/casa2" className='item'>
+                    <Link to="/detalii/casa6" className='item'>
                         <img className='img-menu' src={casa6_1} />
 
                         <div className='item-text'>
@@ -39,7 +39,7 @@ const CHera = () => {
                     <br></br>
                     <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
                     <br></br>
-                    <Link to="/detalii/casa3" className='item'>
+                    <Link to="/detalii/casa7" className='item'>
                         <img className='img-menu' src={casa7_1} />
 
                         <div className='item-text'>
@@ -50,7 +50,7 @@ const CHera = () => {
                     <br></br>
                     <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
                     <br></br>
-                    <Link to="/detalii/casa4" className='item'>
+                    <Link to="/detalii/casa8" className='item'>
                         <img className='img-menu' src={casa8_1} />
 
                         <div className='item-text'>

@@ -16,7 +16,7 @@ const CHelios = () => {
                     <br></br>
                     <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
                     <br></br>
-                    <Link to="/detalii/casa1" className='item'>
+                    <Link to="/detalii/casa9" className='item'>
                         <img className='img-menu' src={casa9_1} />
 
                         <div className='item-text'>
@@ -27,7 +27,7 @@ const CHelios = () => {
                     <br></br>
                     <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
                     <br></br>
-                    <Link to="/detalii/casa2" className='item'>
+                    <Link to="/detalii/casa10" className='item'>
                         <img className='img-menu' src={casa10_1} />
 
                         <div className='item-text'>
@@ -38,7 +38,7 @@ const CHelios = () => {
                     <br></br>
                     <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
                     <br></br>
-                    <Link to="/detalii/casa3" className='item'>
+                    <Link to="/detalii/casa11" className='item'>
                         <img className='img-menu' src={casa11_1} />
 
                         <div className='item-text'>
@@ -49,7 +49,7 @@ const CHelios = () => {
                     <br></br>
                     <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
                     <br></br>
-                    <Link to="/detalii/casa4" className='item'>
+                    <Link to="/detalii/casa12" className='item'>
                         <img className='img-menu' src={casa12_1} />
 
                         <div className='item-text'>
