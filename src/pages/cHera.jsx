@@ -1,69 +1,41 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import './css/cParter.css';
 import { Link } from 'react-router-dom';
-import { casa5_1 } from '../components/assets/casa 5 cu etaj/casa5';
-import { casa6_1 } from '../components/assets/casa 6 cu etaj/casa6';
-import { casa7_1 } from '../components/assets/casa 7 cu etaj/casa7';
-import { casa8_1 } from '../components/assets/casa8 cu etaj/casa8';
+import casaData from './caseData';
 
+const CGeneva = () => {
 
-const CHera = () => {
+    const casa5 = casaData.casa5;
+    const casa6 = casaData.casa6;
+    const casa7 = casaData.casa7;
+    const casa8 = casaData.casa8;
+
+    const { casaId } = useParams();
+    const casa = casaData[casaId];
+
     return (
-        <div>
-            <div style={{ marginTop: "100px" }}>
-
-                <div className="cParter">
-                    <br></br>
-                    <br></br>
-                    <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
-                    <br></br>
-                    <Link to="/detalii/casa5" className='item'>
-                        <img className='img-menu' src={casa5_1} />
-
-                        <div className='item-text'>
-                            <h3>Casa 5</h3>
-                            <p>Casa ecologică de la Eco-Builder, cu un singur nivel, îmbină armonios eleganța și sustenabilitatea...</p>
-                        </div>
-                    </Link>
-                    <br></br>
-                    <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
-                    <br></br>
-                    <Link to="/detalii/casa6" className='item'>
-                        <img className='img-menu' src={casa6_1} />
-
-                        <div className='item-text'>
-                            <h3>Casa 6</h3>
-                            <p>Casa ecologică de la Eco-Builder, cu un singur nivel, îmbină armonios eleganța și sustenabilitatea...</p>
-                        </div>
-                    </Link>
-                    <br></br>
-                    <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
-                    <br></br>
-                    <Link to="/detalii/casa7" className='item'>
-                        <img className='img-menu' src={casa7_1} />
-
-                        <div className='item-text'>
-                            <h3>Casa 7</h3>
-                            <p>Casa ecologică de la Eco-Builder, cu un singur nivel, îmbină armonios eleganța și sustenabilitatea...</p>
-                        </div>
-                    </Link>
-                    <br></br>
-                    <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
-                    <br></br>
-                    <Link to="/detalii/casa8" className='item'>
-                        <img className='img-menu' src={casa8_1} />
-
-                        <div className='item-text'>
-                            <h3>Casa 8</h3>
-                            <p>Casa ecologică de la Eco-Builder, cu un singur nivel, îmbină armonios eleganța și sustenabilitatea...</p>
-                        </div>
-                    </Link>
-                    <br></br>
-                    <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
-                </div>
+        <div style={{ marginTop: "100px" }}>
+            <div className="cParter">
+                {[casa5, casa6, casa7, casa8].map((casa) => (
+                    <React.Fragment key={casa.id}>
+                        <br />
+                        <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
+                        <br />
+                        <Link to={`/detalii/${casa.id}`} className='item'>
+                            <img className='img-menu' src={casa.image} />
+                            <div className='item-text'>
+                                <h4>{casa.nume}</h4>
+                                <p className='description'>{casa.description}</p>
+                            </div>
+                        </Link>
+                        <br />
+                    </React.Fragment>
+                ))}
+                <div className="bar-horizontal" style={{ width: "70vw", position: "absolute", marginLeft: "12vw" }}></div>
             </div>
         </div>
     );
 }
 
-export default CHera;
+export default CGeneva;

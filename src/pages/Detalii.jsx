@@ -11,7 +11,7 @@ const Detalii = () => {
 
     return (
         <>
-            <h1 className="detalii-title">{casa.name}</h1>
+            <h1 className="detalii-title">{casa.nume}</h1>
             <div className="detalii-container">
                 <Carousel className="detalii-carousel">
                     {casa.images.map((image, index) => (
@@ -21,22 +21,41 @@ const Detalii = () => {
                     ))}
                 </Carousel>
                 <div>
-                <h3 style={{marginTop:"30px"}}>Descriere:</h3>
-                <br></br>
-                <p className="detalii-description">{casa.description}</p>
-                <br></br>
-                <br></br>
-                <h3>Detalii:</h3>
-                <br></br>
-                <ul>
-                    <li>Suprafață: {casa.sup} m²</li>
-                    <li>Suprafață Utilă: {casa.suputil} m²</li>
-                    <li>Terase Acoperite: {casa.ter} m²</li>
-                </ul>
+                    <h3>Descriere:</h3>
+                    <br></br>
+                    <p className="detalii-description">{casa.description}</p>
+                    <br></br>
+                    <br></br>
+                    <h3>Detalii:</h3>
+                    <br></br>
+                    <div role="region" tabindex="0">
+                        <div class="detalii-casa" role="region" tabindex="0">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Suprafață: {casa.sup}m²</td>
+                                        <td>Dormitoare: {casa.dor}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suprafață utilă: {casa.suputil}</td>
+                                        <td>Băi: {casa.baie}</td>
+                                    </tr>
+                                    <tr>
+                                        <td> Suprafață Terase Acoperite: {casa.ter}</td>
+                                        <td>Living: {casa.liv}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suprafață Terase Neacoperite: {casa.terneacop}</td>
+                                        <td>Garaj: {casa.gar}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </>
-    );
+            </div>    
+            </>
+            );
 }
 
 export default Detalii;
