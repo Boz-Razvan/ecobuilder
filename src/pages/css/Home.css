@@ -1,0 +1,180 @@
+.home-image {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: calc(110vh - 60px);
+  overflow: hidden;
+  margin-top: 60px;
+  filter: grayscale(10%);
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, white, transparent);
+  z-index: 2;
+}
+
+.home-text {
+  position: absolute;
+  left: 10px;
+  top: 45%;
+  color: white;
+  font-size: 60px;
+  font-weight: 1000;
+  text-shadow: 3px 3px 1px #0b771888;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0b7718;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d4f14;
+}
+
+.viziune {
+  width: 100%;
+  text-align: start;
+  padding-left: 20%;
+  margin-top: 140px;
+  color: #0b7718;
+  font-size: 40px;
+  user-select: none;
+}
+
+.container-viziune {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.bg-text {
+  position: absolute;
+  z-index: -1;
+  font-size: 250px;
+  color: #17d72da2;
+  user-select: none;
+}
+
+img {
+  width: 0;
+  height: 0;
+}
+
+.bar-vertical {
+  z-index: -1;
+  width: 4px;
+  height: 275px;
+  margin-left: 4%;
+  margin-right: 4%;
+  align-self: center;
+  background-color: #17d72da2;
+}
+
+.bar-horizontal {
+  z-index: -1;
+  height: 4px;
+  width: 275px;
+  margin-bottom: 10px;
+  align-self: center;
+  background-color: #17d72da2;
+}
+
+.viziune-text {
+  align-self: center;
+  width: 30%;
+}
+
+@media only screen and (max-width: 2600px) {
+  .home-text {
+    font-size: 40px;
+  }
+
+  .viziune {
+    font-size: 30px;
+  }
+
+  .container-viziune {
+    font-size: 20px;
+    display: block;
+    width: 100vw;
+  }
+
+  .bar-vertical {
+    display: none;
+  }
+
+  .home-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, white, transparent);
+    z-index: 2;
+  }
+
+  .viziune-text {
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  .container-viziune img {
+    scale: 0.78;
+    margin-left: -8.5%;
+  }
+
+  .home-image {
+    height: auto;
+  }
+
+  .home-text p {
+    display: none;
+  }
+
+  .home-text p1{
+    margin-top: -20px;
+  }
+
+  .cardContainer{
+    margin-top: 10px;
+  }
+
+}

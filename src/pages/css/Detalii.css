@@ -1,0 +1,64 @@
+.detalii-container {
+    width: 98vw;
+    margin: 100px 10px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+h3{
+    color: #45a049;
+}
+
+.detalii-carousel{
+    width: 50vw;
+    display: block;
+}
+
+.detalii-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 120px;
+    margin-bottom: -5   0px;
+}
+
+.detalii-carousel {
+    margin-bottom: 20px;
+}
+
+
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.detalii-description {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .detalii-container {
+        margin: auto;
+        scale: 0.7;
+        display: flex;
+        margin-bottom: -150px;
+    }
+
+    .detalii-carousel {
+        width: 100%;
+        scale: 1.4;
+    }
+
+    .detalii-title {
+        font-size: 1.5em;
+        margin-top: 0px;
+        margin-bottom: -120px;
+    }
+}

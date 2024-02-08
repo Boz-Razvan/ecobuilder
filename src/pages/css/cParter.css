@@ -1,0 +1,42 @@
+.cParter {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.item {
+    justify-content: space-between;
+    display: flex;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: ease-in-out 0.3s;
+    margin-left: 1%;
+    background-color: rgb(240, 248, 244);
+    box-shadow: 10px 10px 10px rgba(36, 153, 36, 0.379);
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+.item-text {
+    color: black;
+    font-size: 20px;
+    width: 70%;
+}
+
+
+.img-menu {
+    width: 20vw;
+    height: auto;
+    box-shadow: 2px 2px 5px rgb(62, 63, 62);
+}
+
+@media (max-width: 768px) {
+    .cParter{
+        margin-top: -5px;
+    }
+}

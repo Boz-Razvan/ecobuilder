@@ -1,0 +1,124 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 84px;
+    background-color: #009912;
+    z-index: 999;
+    user-select: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    position: absolute;
+    padding: 0;
+    width: 90%;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    padding: 30px;
+    margin-bottom: 20px;
+    left: -10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    font-size: 20px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #c4c4c4;
+    bottom: -3px;
+    left: 50%;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #c4c4c4;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-logo {
+    position: fixed;
+    z-index: 9999999999999;
+    height: 150px;
+    top:30px;
+    left: 20px;
+    width: 150px;
+    user-select: none;
+    margin-top: -21px;
+    transition: ease-in-out 0.3s;
+    border: none;
+}
+
+.navbar-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    border-bottom: none;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    top: 21px;
+    right: 20px;
+    z-index: 1000;
+    scale: 1.5;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        background-color: #0fcb25;
+        z-index: 999;
+    }
+
+    .navbar.open ul {
+        transform: translateX(0);
+    }
+
+    .menu-button {
+        display: block;
+        z-index: 1000;
+    }
+
+.navbar-logo{
+    top: -12px;
+    left: -30px;
+    scale: 0.5;
+}
+
+.navbar-logo:hover {
+    transform: scale(1);
+
+}
+}
