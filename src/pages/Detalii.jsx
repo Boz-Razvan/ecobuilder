@@ -37,15 +37,15 @@ const Detalii = () => {
                                         <td>Dormitoare: {casa.dor}</td>
                                     </tr>
                                     <tr>
-                                        <td>Suprafață utilă: {casa.suputil}</td>
+                                        <td>Suprafață utilă: {casa.suputil}m²</td>
                                         <td>Băi: {casa.baie}</td>
                                     </tr>
                                     <tr>
-                                        <td> Suprafață Terase Acoperite: {casa.ter}</td>
+                                        <td> Suprafață Terase Acoperite: {casa.ter}m²</td>
                                         <td>Living: {casa.liv}</td>
                                     </tr>
                                     <tr>
-                                        <td>Suprafață Terase Neacoperite: {casa.terneacop}</td>
+                                        <td>Suprafață Terase Neacoperite: {casa.terneacop}m²</td>
                                         <td>Garaj: {casa.gar}</td>
                                     </tr>
                                 </tbody>

@@ -119,6 +119,24 @@ img {
   width: 30%;
 }
 
+.mater{
+  margin-top: 100px;
+  display: flex;
+  width: 100vw;
+  height: 150px;
+  background-color: rgb(240, 249, 237);
+  justify-content: space-around;
+  box-shadow: 0px 1cap 10px rgba(58, 66, 58, 0.379);
+} 
+
+.icon-cont{
+  display: flex;
+  align-items: center;
+  scale: 1.5;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
   .home-text {
     font-size: 40px;
@@ -178,4 +196,12 @@ img {
     margin-top: 10px;
   }
 
+  .mater{
+    flex-direction: column;
+    height: 300px;
+  }
+
+  .icon-cont{
+    align-items: center;
+    }
 }
