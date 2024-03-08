@@ -50,25 +50,21 @@ const Home = () => {
             <FontAwesomeIcon icon={faTrowelBricks} />
             <br></br>
             <p>Materiale Durabile</p>
-            <p style={{fontSize: "9px"}}>Beton Armat</p>
           </div>
           <div className="icon-cont">
             <FontAwesomeIcon icon={faSolarPanel} />
             <br></br>
             <p>Acoperiș Fotovoltaic</p>
-            <p style={{fontSize: "9px"}}>Beton Armat</p>
           </div>
           <div className="icon-cont">
             <FontAwesomeIcon icon={faHouseChimney} />
             <br></br>
             <p>Ferestre Eficiente</p>
-            <p style={{fontSize: "9px"}}>Beton Armat</p>
           </div>
           <div className="icon-cont">
             <FontAwesomeIcon icon={faShield} />
             <br></br>
             <p>Beton Armat</p>
-            <p style={{fontSize: "9px"}}>Beton Armat</p>
           </div>
         </div>
 

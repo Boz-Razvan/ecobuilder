@@ -22,6 +22,7 @@ const Navbar = () => {
                     <li className='NavLink'><Link to="/geneva" onClick={handleToggle}>CASE GENEVA</Link></li>
                     <li className='NavLink'><Link to="/hera" onClick={handleToggle}>CASE HERA</Link></li>
                     <li className='NavLink'><Link to="/helios" onClick={handleToggle}>CASE HELIOS</Link></li>
+                    <li className='NavLink'><Link to="/tehnologii" onClick={handleToggle}>TEHNOLOGII</Link></li>
                     <li className='NavLink'><Link to="/contact" onClick={handleToggle}>CONTACT</Link></li>
                 </ul>
                 <button className="menu-button" onClick={handleToggle}>{isOpen ? 'X' : '☰'}</button>

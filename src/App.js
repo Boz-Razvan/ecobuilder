@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Home from './pages/Home'
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
@@ -7,9 +9,10 @@ import Footer from './components/Footer';
 import CHelios from './pages/cHelios';  
 import Detalii from './pages/Detalii';
 import CGeneva from './pages/cGeneva';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import Tech from './pages/tech';
+import TechDetails from './pages/techDetails';
 import CHera from './pages/cHera';
+
 
 
 const ScrollToTop = () => {
@@ -35,6 +38,8 @@ const ScrollToTop = () => {
           <Route path="/etalii" element={<Detalii />} />
           <Route path='/hera' element={<CHera />} />
           <Route path="/detalii/:casaId" element={<Detalii />} />
+          <Route path='/tehnologii' element={<Tech />} />
+          <Route path='/details/:techId' element={<TechDetails />} />
         </Routes>
         <Footer />
       </Router>
